@@ -706,7 +706,7 @@ contract VestingTwo is Ownable {
         token.safeTransferFrom(msg.sender, address(this), _amount);
         lockedTokens = _amount;
         availableTokens = _amount;
-        expiry = block.timestamp + 120 days;
+        expiry = block.timestamp + 180 days;
        // expiry = block.timestamp + 60;
         startTime = block.timestamp;
         locked = true;
